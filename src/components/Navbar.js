@@ -4,13 +4,13 @@ function Navbar() {
   return (
     <div id="nav-list">
         <div id="home">
-            Home
+        <li><a href="/">Home</a></li>
         </div>
         <div id="new-content">
-            <a href="/">Add Content</a>
+            <li><a href="/">Add Content</a></li>
         </div>
         <div id="share">
-            <a href="/">Share</a>
+            <li><a href="/">Share</a></li>
             </div>
     </div>
   );
