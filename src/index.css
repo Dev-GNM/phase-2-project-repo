@@ -22,8 +22,8 @@ nav {
 
 
 nav li {
-  list-style: none;
   text-decoration: none;
+  list-style: none;
   padding: 15px;
 }
 
@@ -39,14 +39,21 @@ nav li a:hover {
     background-color: rgba(43, 225, 253, 0.664);
     text-align: center;
     padding-top: 5%;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 
 #content-container {
-    height: 200px;
+    height: 300px;
     display: flex;
     flex-direction: row;
     margin: 20px;
+    background-color: rgb(255, 254, 253);
+    font-size: 15px;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: column;
 }
 

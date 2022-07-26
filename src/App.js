@@ -3,6 +3,7 @@ import './index.css';
 import Slider from "./components/Slider"
 import Navbar from "./components/Navbar"
 import NewContent from "./components/NewContent"
+import ShareContent from "./components/ShareContent"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Slider />
       <NewContent />
+      <ShareContent />
     </div>
   );
 }
