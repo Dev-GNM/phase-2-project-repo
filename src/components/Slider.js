@@ -1,9 +1,13 @@
 import React from 'react';
 
-export default function Slider() {
-  return (
-    <div>
-      
-    </div>
-  );
+ function Slider() {
+    return (
+        <div>
+            <em><p>It's simply writing down your thoughts and feelings to understand them more clearly. <br></br>
+                Structure and share the content on your social media platforms with a click.
+            </p></em>
+        </div>
+    );
 }
+
+export default Slider;

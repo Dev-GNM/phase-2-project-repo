@@ -1,9 +1,13 @@
 import './App.css';
+import './index.css';
+import Slider from "./components/Slider"
+import Navbar from "./components/Navbar"
 
 function App() {
   return (
     <div className="App">
-     Let's create a react app
+      <Navbar />
+      <Slider />
     </div>
   );
 }

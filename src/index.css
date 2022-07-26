@@ -1,0 +1,20 @@
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    background-color: rgba(43, 225, 253, 0.664);
+}
+
+#nav-list{
+    background: white;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 20px;
+}
