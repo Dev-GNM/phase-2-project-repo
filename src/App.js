@@ -4,6 +4,7 @@ import Slider from "./components/Slider"
 import Navbar from "./components/Navbar"
 import NewContent from "./components/NewContent"
 import ShareContent from "./components/ShareContent"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Slider />
       <NewContent />
       <ShareContent />
+      <Footer />
     </div>
   );
 }

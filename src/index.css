@@ -12,12 +12,13 @@ body {
 
 
 nav {
-  background: white;
+  background:  rgb(48, 46, 46);
   height: 70px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding: 10px;
+  color: white;
 }
 
 
@@ -25,18 +26,19 @@ nav li {
   text-decoration: none;
   list-style: none;
   padding: 15px;
+  color: white;
 }
 
 
 nav li a:hover {
-    color: rgb(182, 202, 202);
+    color: rgb(218, 238, 238);
 }
 
 
 
 #slide-text {
     height: 300px;
-    background-color: rgba(43, 225, 253, 0.664);
+    background-color: rgba(204, 225, 228, 0.664);
     text-align: center;
     padding-top: 5%;
 }
@@ -46,9 +48,8 @@ nav li a:hover {
     height: 300px;
     display: flex;
     flex-direction: row;
-    margin: 20px;
-    background-color: rgb(255, 254, 253);
-    font-size: 15px;
+    padding: 20px;
+    background-color: rgba(43, 225, 253, 0.664);
 }
 
 #form-container {
@@ -58,5 +59,18 @@ nav li a:hover {
 
 #all-content {
     height: 250px;
+    background-color:  rgba(204, 225, 228, 0.664);
+}
+
+
+#footer{
+    background-color: rgb(48, 46, 46);
+    height: 250px;
+    opacity: 0.9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
 }
 
