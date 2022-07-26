@@ -74,3 +74,12 @@ nav li a:hover {
     align-items: center;
 }
 
+input[type=submit] {
+    background-color: rgba(43, 225, 253, 0.664);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
