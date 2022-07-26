@@ -2,7 +2,7 @@ import React from 'react';
 
 function NewContent() {
   return (
-    <div id="content-contaner">
+    <div id="content-container">
       <div id="form-container">
         <form id="content">
         <label for="topictype">Topic:</label>

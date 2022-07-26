@@ -43,3 +43,10 @@ nav li a:hover {
 }
 
 
+#content-container {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
