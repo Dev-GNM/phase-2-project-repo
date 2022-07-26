@@ -28,6 +28,12 @@ nav li {
 }
 
 
+nav li a:hover {
+    color: rgb(182, 202, 202);
+}
+
+
+
 #slide-text {
     height: 200px;
     background-color: rgba(43, 225, 253, 0.664);
@@ -35,3 +41,5 @@ nav li {
     padding-top: 5%;
     font-size: 17px;
 }
+
+
