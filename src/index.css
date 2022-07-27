@@ -14,11 +14,13 @@ body {
 nav {
   background:  rgb(48, 46, 46);
   height: 70px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding: 10px;
   color: white;
+  position: fixed;
 }
 
 
@@ -37,10 +39,10 @@ nav li a:hover {
 
 
 #slide-text {
-    height: 300px;
+    height: 350px;
     background-color: rgba(204, 225, 228, 0.664);
     text-align: center;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 
@@ -50,6 +52,11 @@ nav li a:hover {
     flex-direction: row;
     padding: 20px;
     background-color: rgba(43, 225, 253, 0.664);
+}
+
+
+#render-content{
+    text-align: center;
 }
 
 #form-container {
@@ -65,7 +72,7 @@ nav li a:hover {
 
 #footer{
     background-color: rgb(48, 46, 46);
-    height: 250px;
+    height: 550px;
     opacity: 0.9;
     color: white;
     display: flex;
@@ -82,4 +89,22 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
   }
+
+  input[type=submit]:hover {
+    background-color: rgb(48, 46, 46);
+  }
+
+
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+    overflow: hidden;
+  }
+  
 

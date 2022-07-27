@@ -9,7 +9,7 @@ function NewContent() {
     <input type="text" id="top" name="majortopic" placeholder="Your topic.."/>
 
     <label for="topictype">Add content here:</label>
-    <textarea id="your-content" name="content" placeholder="Add content here"/>
+    <textarea id="your-content" name="content" placeholder="Add content here..."/>
 
 
     <input type="submit" value="Submit"/>

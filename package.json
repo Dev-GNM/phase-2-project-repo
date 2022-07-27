@@ -1,38 +1,25 @@
 {
-  "name": "phase-2-project-repo",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "donations": [
+      {
+          "id": 1,
+          "type": "Clothing",
+          "itemdescription": "Even though you dont want your old clothes anymore, its almost guaranteed that someone else will. There are many people in need of usable clothing. There are disaster victims, underprivileged people, and children in need of clothing, and your donations can help. When you throw away your clothes, they have no chance of reaching people who need them the most."
+      },
+      {
+          "id": 2,
+          "type": "Kitchen Ware",
+          "itemdescription": "There are a few types of kitchen ware you can donate and we will show you what they are so you can make the right decision for your kitchen. These include Cookware, kitchen utensils, storage containers, and small kitchen appliances."
+      },
+      {
+          "id": 3,
+          "type": "Books",
+          "itemdescription": "Books are donated and sold online to help raise funds for non-profit literacy organizations changing the world through teaching kids, supporting families, building schools and filling libraries. Any books that aren't are either donated directly to a non-profit partner or recycled."
+      },
+      {
+          "id": 4,
+          "type": "Toys and Games",
+          "itemdescription": "Donating toys and games to eDonate helps fund our vital work fighting poverty worldwide. Find out where to donate toys, what kinds of toys and games you can donate, and what happens to your donations."
+      }
+  ]
 }
+
