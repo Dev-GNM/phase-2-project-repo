@@ -17,8 +17,18 @@ function NewContent() {
       </div>
 
       <div id="render-content">
-        <h2>Empty div</h2>
-      </div>
+      <h3>{topic}</h3>
+      <p>{content}</p>
+      <p>
+        <strong>- {author}</strong>
+      </p>
+      <button onClick={toggleRead}>
+        {isRead ? "Read" : "Mark as Read and share"}
+      </button>
+      <button onClick={onClickDelete} style={{ marginLeft: "10px" }}>
+        Delete
+      </button>
+    </div>
     </div>
   );
 }
