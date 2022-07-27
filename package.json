@@ -2,23 +2,27 @@
   "donations": [
       {
           "id": 1,
-          "type": "Clothing",
-          "itemdescription": "Even though you dont want your old clothes anymore, its almost guaranteed that someone else will. There are many people in need of usable clothing. There are disaster victims, underprivileged people, and children in need of clothing, and your donations can help. When you throw away your clothes, they have no chance of reaching people who need them the most."
+          "type": "Data analytics",
+          "itemdescription": "Even though you dont want your old clothes anymore, its almost guaranteed that someone else will. There are many people in need of usable clothing. There are disaster victims, underprivileged people, and children in need of clothing, and your donations can help. When you throw away your clothes, they have no chance of reaching people who need them the most.",
+          "script": "server"
       },
       {
           "id": 2,
-          "type": "Kitchen Ware",
-          "itemdescription": "There are a few types of kitchen ware you can donate and we will show you what they are so you can make the right decision for your kitchen. These include Cookware, kitchen utensils, storage containers, and small kitchen appliances."
+          "type": "Software engineering",
+          "itemdescription": "There are a few types of kitchen ware you can donate and we will show you what they are so you can make the right decision for your kitchen. These include Cookware, kitchen utensils, storage containers, and small kitchen appliances.",
+          "script": "server"
       },
       {
           "id": 3,
-          "type": "Books",
-          "itemdescription": "Books are donated and sold online to help raise funds for non-profit literacy organizations changing the world through teaching kids, supporting families, building schools and filling libraries. Any books that aren't are either donated directly to a non-profit partner or recycled."
+          "type": "Technical writing",
+          "itemdescription": "Books are donated and sold online to help raise funds for non-profit literacy organizations changing the world through teaching kids, supporting families, building schools and filling libraries. Any books that aren't are either donated directly to a non-profit partner or recycled.",
+          "script": "server"
       },
       {
           "id": 4,
-          "type": "Toys and Games",
-          "itemdescription": "Donating toys and games to eDonate helps fund our vital work fighting poverty worldwide. Find out where to donate toys, what kinds of toys and games you can donate, and what happens to your donations."
+          "topic": "Wed development",
+          "itemdescription": "Donating toys and games to eDonate helps fund our vital work fighting poverty worldwide. Find out where to donate toys, what kinds of toys and games you can donate, and what happens to your donations.",
+          "script": "server"
       }
   ]
 }
