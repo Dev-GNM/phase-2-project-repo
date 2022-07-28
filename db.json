@@ -1,19 +1,28 @@
 {
-  "posts": [
+  "contents": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "topic": "Database",
+      "content": "If some is from a nontech-background and want to know database management system, which notes can they go through to understand Sql and Dbms concept?",
+      "author": "Dev Geoff"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "topic": "React",
+      "content": "I did a capstone project that displayed data from an API using react components, redux to handle state manipulation, and life cycle to handle updates and came up with test cases. I built a makeup store website where one can view different makeup products from their brands and the product details.",
+      "author": "Dev Geoff"
+    },
+    {
+      "id": 3,
+      "topic": "Javascript",
+      "content": "Did you know, you can avoid using if condition while assigning a new property to an object easily like this?",
+      "author": "Dev Geoff"
+    },
+    {
+      "id": 4,
+      "topic": "Automation",
+      "content": "Hi All, What do you Prefer Automation Tools or Coding Frameworks for Testing?.",
+      "author": "Dev Geoff"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

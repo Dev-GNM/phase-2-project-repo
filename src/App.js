@@ -3,7 +3,7 @@ import './index.css';
 import Slider from "./components/Slider"
 import Navbar from "./components/Navbar"
 import NewContent from "./components/NewContent"
-import ShareContent from "./components/ShareContent"
+import ViewContent from "./components/ViewContent"
 import Footer from "./components/Footer"
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Slider />
       <NewContent />
-      <ShareContent />
+      <ViewContent />
       <Footer />
     </div>
   );

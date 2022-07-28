@@ -3,10 +3,10 @@ import React, { useState } from "react";
 function Content({ content, onDeleteContent, onPostContent }) {
   const { id, topic, content, author } = content;
 
-  const [ isRead, setisRead ] = useState(false);
+  const [ isImportant, setisImportant ] = useState(false);
 
-  const toggleRead = () => {
-    setisRead((isRead) => !isRead);
+  const toggleImportant = () => {
+    setisImportant((isImportant) => !isImportant);
   };
   function onClickDelete() {
     fetch(`http://localhost:8004/poems/${id}`, {
@@ -35,8 +35,8 @@ function Content({ content, onDeleteContent, onPostContent }) {
       <p>
         <strong>- {author}</strong>
       </p>
-      <button onClick={toggleRead}>
-        {isRead ? "Mark as important" : "Mark as important"}
+      <button onClick={toggleImportant}>
+        {isImportant ? "Mark as important" : "Mark as important"}
       </button>
       <button onClick={onClickDelete} style={{ marginLeft: "10px" }}>
         Delete 
