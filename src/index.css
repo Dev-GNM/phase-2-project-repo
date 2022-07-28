@@ -65,7 +65,7 @@ nav li a:hover {
 }
 
 #all-content {
-    height: 250px;
+    height: 350px;
     background-color:  rgba(204, 225, 228, 0.664);
 }
 
@@ -103,8 +103,45 @@ input[type=submit] {
     box-sizing: border-box; 
     margin-top: 6px; 
     margin-bottom: 16px; 
-    resize: vertical;
+    resize: horizontal;
     overflow: hidden;
   }
+
+.support{
+  background-color: blue;
+  padding: 15px;
+  margin: 18px;
+
+  }
+
+  form.new-poem-form {
+    border: solid black 1px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+  }
   
+  form.new-poem-form > input,
+  form.new-poem-form > textarea {
+    font-size: 1em;
+    font-family: sans-serif;
+    margin-bottom: 0.5em;
+  }
+  
+  input[type="submit"],
+  button {
+    font-weight: bold;
+    font-size: 1em;
+    background: #04e8ff;
+    border: solid black 1px;
+    padding: 0.5em;
+    cursor: pointer;
+  }
+  
+  
+
+
+
+
 
