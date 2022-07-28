@@ -19,7 +19,6 @@ nav {
   flex-direction: row;
   justify-content: flex-end;
   padding: 10px;
-  color: white;
   position: fixed;
 }
 
@@ -33,7 +32,10 @@ nav li {
 
 
 nav li a:hover {
-    color: rgb(218, 238, 238);
+    color: rgb(12, 14, 14);
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 3px;
 }
 
 
@@ -82,7 +84,7 @@ nav li a:hover {
 }
 
 input[type=submit] {
-    background-color: rgba(43, 225, 253, 0.664);
+    background-color: rgba(204, 225, 228, 0.664);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -92,6 +94,7 @@ input[type=submit] {
 
   input[type=submit]:hover {
     background-color: rgb(48, 46, 46);
+    color: white;
   }
 
 
@@ -111,6 +114,7 @@ input[type=submit] {
   background-color: blue;
   padding: 15px;
   margin: 18px;
+  border-radius: 10px;
 
   }
 
@@ -133,10 +137,11 @@ input[type=submit] {
   button {
     font-weight: bold;
     font-size: 1em;
-    background: #04e8ff;
+    background: rgba(204, 225, 228, 0.664);
     border: solid black 1px;
-    padding: 0.5em;
+    padding: 0.3em;
     cursor: pointer;
+    color: black;
   }
   
   

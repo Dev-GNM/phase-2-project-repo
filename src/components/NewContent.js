@@ -17,7 +17,7 @@ function NewContent({ onAddContent }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        title: formData.title,
+        topic: formData.topic,
         content: formData.content,
         author: formData.author,
       }),
@@ -25,7 +25,7 @@ function NewContent({ onAddContent }) {
       .then((r) => r.json())
       .then((newContent) => {
         onAddContent(newContent);
-        setFormData({ ...formData, title: "", author: "", content: "" });
+        setFormData({ ...formData, topic: "", author: "", content: "" });
       });
   }
   return (
