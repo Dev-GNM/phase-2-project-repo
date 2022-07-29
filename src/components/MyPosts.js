@@ -1,16 +1,38 @@
-import React from 'react';
+import React, { useState } from "react";
 
- function MyPosts() {
+function MyPosts({ post, onDeletePost}) {
+  const { id, topic, content, author } = post;
+
+  const [ isShared, setisShared ] = useState(false);
+
+  const toggleShared = () => {
+    setisShared((isShared) => !isShared);
+  };
+  function onClickDelete() {
+    fetch(`http://localhost:3000/posts/${id}`, {
+      method: "DELETE",
+    })
+      .then((r) => r.json())
+      .then(() => {
+        onDeletePost(id);
+      });
+  }
+
   return (
-    <div className="myPosts">
-      <em><p>If some is from a nontech-background and want to know database management system,<br></br> which notes can they go through to understand Sql and Dbms concept?</p></em><br></br>
-      <em><p>I did a capstone project that displayed data from an API using react components, <br></br>
-      redux to handle state manipulation, and life cycle to handle updates and came up with test cases. <br></br>
-      I built a makeup store website where one can view different makeup products from their brands and the product details.</p></em>
-      <button>Share Post</button>
+    <div>
+      <h3>{topic}</h3>
+      <p>{content}</p>
+      <p>
+        <strong>- {author}</strong>
+      </p>
+      <button onClick={toggleShared}>
+        {isShared ? "Mark as Unshared" : "Mark as shared"}
+      </button>
+      <button onClick={onClickDelete} style={{ marginLeft: "10px" }}>
+        Delete Post
+      </button>
     </div>
   );
 }
-
 
 export default MyPosts;

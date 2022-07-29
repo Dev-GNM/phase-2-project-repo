@@ -13,13 +13,15 @@ import React from 'react';
       <div className="support">
       <h3>We love to here from you! Contact us</h3>
       <form id="contact-us">
-        <input type="text" name="fname" value="First Name"/> 
-        <input type="text" name="lname" value="Last Name" placeholder="Last Name"/>
-        <input type="text" name="email" value="Email" placeholder="Email"/>
+        <input type="text" name="fname" value="First Name" required/> 
+        <input type="text" name="lname" value="Last Name" placeholder="Last Name" required/>
+        <input type="text" name="email" value="Email" placeholder="Email" required/>
         <textarea value="content" placeholder="Write here..."/>
         <input type="submit" value="Submit"/>
       </form>
+      <strong><p>Designed with passion by Geoffrey&#128512;</p></strong>
       </div> 
+     
     </div>
  )};
 

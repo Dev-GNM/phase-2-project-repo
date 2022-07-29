@@ -35,13 +35,14 @@ body {
 
 
 li{
-  padding: 8px;
+  padding: 10px;
 }
 
 a {
   text-decoration: none;
   color: white;
-  border-bottom: solid rgb(156, 108, 5) 1px;
+  border-bottom: solid rgb(156, 108, 5) 1.3px;
+  font-size: 17px;
 
 }
 
@@ -92,7 +93,9 @@ a {
   padding: 5%;
 }
 
-
+.post-container{
+  height: 350px;
+}
 
 #footer{
     background-color: rgb(48, 46, 46);
@@ -148,6 +151,11 @@ input[type=submit] {
   padding: 12px;
   margin: 18px;
   border-radius: 10px;
+  }
+
+
+  .support p{
+    padding-top: 40px;
   }
   
 
