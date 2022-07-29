@@ -1,17 +1,19 @@
 import React, {useState} from 'react';
 
-function NewContent({ onAddContent }) {
+function NewContent({onAddPost}) {
   const [formData, setFormData] = useState({
     topic: "",
     content: "",
     author: "",
   });
+
   function handlechange(e) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   }
+
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:8004/poems", {
+    fetch("http://localhost:3000/posts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -23,24 +25,18 @@ function NewContent({ onAddContent }) {
       }),
     })
       .then((r) => r.json())
-      .then((newContent) => {
-        onAddContent(newContent);
-        setFormData({ ...formData, topic: "", author: "", content: "" });
+      .then((newPost) => {
+        onAddPost(newPost);
+        setFormData({ ...formData, topic: "", content: "", author: "" });
       });
   }
   return (
-    <form onSubmit={handleSubmit} className="new-content-form">
+    <form onSubmit={handleSubmit} className="new-post-form">
       <input
-        value={formData.title}
+        value={formData.topic}
         name="topic"
         onChange={handlechange}
         placeholder="Topic"
-      />
-      <input
-        value={formData.author}
-        name="author"
-        onChange={handlechange}
-        placeholder="Author"
       />
       <textarea
         value={formData.content}
@@ -49,7 +45,13 @@ function NewContent({ onAddContent }) {
         placeholder="Write your content here..."
         rows={10}
       />
-      <input type="submit" value="Submit" />
+       <input
+        value={formData.author}
+        name="author"
+        onChange={handlechange}
+        placeholder="Author"
+      />
+      <input type="submit" value="Submit post" />
     </form>
   );
 }
