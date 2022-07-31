@@ -10,7 +10,7 @@ import Footer from "./components/Footer"
 
 function App() {
     const [posts, setPosts] = useState([]);
-    const [showForm, setShowForm] = useState(true);
+    // const [showForm, setShowForm] = useState(true);
     useEffect(() => {
       fetch("http://localhost:3000/posts")
         .then((r) => r.json())
@@ -18,10 +18,11 @@ function App() {
           setPosts(data);
         });
     }, []);
-  
-    const toggleForm = () => {
-      setShowForm((showForm) => !showForm);
-    };
+ 
+   
+    // const toggleForm = () => {
+    //   setShowForm((showForm) => !showForm);
+    // };
     function handleAddPost(newPost) {
       setPosts([...posts, newPost]);
     }
@@ -34,13 +35,7 @@ function App() {
       <div className="app">
         <Navbar />
         <Slider />
-        <div className="sidebar">
-          <button onClick={toggleForm}>
-            {showForm ? "Hide form" : "Add post"}
-          </button>
-          {showForm ? <NewContent onAddPost={handleAddPost} /> : null}
-        </div>
-        <NewContent />
+       <NewContent onAddPost={handleAddPost} /> : {null}
         <PostContainer posts={posts} onDeletePost={handleDeletePost} />
         <Footer />
       </div>
